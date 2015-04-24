@@ -1,0 +1,243 @@
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] INFO --- 200 GET / (192.168.1.102) 8.00ms
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] WARNING --- 404 GET /favicon.ico (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:10:03 web.py[line:1811] WARNING --- 404 GET /favicon.ico (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:11:11 web.py[line:1811] WARNING --- 404 GET /favicon.ico (192.168.1.102) 2.00ms
+Wed, 17 Dec 2014 23:11:11 web.py[line:1811] WARNING --- 404 GET /favicon.ico (192.168.1.102) 2.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] INFO --- 304 GET / (192.168.1.102) 2.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (192.168.1.102) 0.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (192.168.1.102) 1.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] WARNING --- 404 GET /favicon.ico (192.168.1.102) 0.00ms
+Wed, 17 Dec 2014 23:11:36 web.py[line:1811] WARNING --- 404 GET /favicon.ico (192.168.1.102) 1.00ms
+Fri, 26 Dec 2014 15:33:24 computer_web.py[line:60] INFO --- Socket open!
+Fri, 26 Dec 2014 15:34:06 computer_web.py[line:75] INFO --- Socket close!
+Fri, 26 Dec 2014 15:34:06 computer_web.py[line:60] INFO --- Socket open!
+Fri, 26 Dec 2014 15:46:59 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:47:08 computer_web.py[line:76] INFO --- [object HTMLInputElement]/////uuid is send!
+Fri, 26 Dec 2014 15:47:50 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:47:57 computer_web.py[line:76] INFO --- [object HTMLInputElement]/////uuid is send!
+Fri, 26 Dec 2014 15:48:48 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:48:51 computer_web.py[line:77] INFO --- [object HTMLInputElement]/////uuid is send!
+Fri, 26 Dec 2014 15:50:21 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 15:50:21 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:50:37 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 15:52:10 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:52:19 computer_web.py[line:77] INFO --- 你好/////erweima is send!
+Fri, 26 Dec 2014 15:53:32 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:53:36 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 75, in on_message
+    erweima(self.data[0])
+NameError: global name 'erweima' is not defined
+Fri, 26 Dec 2014 15:53:37 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 15:54:10 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:54:14 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 75, in on_message
+    self.erweima(self.data[0])
+AttributeError: 'WebSocketHandler' object has no attribute 'data'
+Fri, 26 Dec 2014 15:54:14 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 15:55:10 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:55:15 computer_web.py[line:77] INFO --- 哈啥地方//////erweima is send!
+Fri, 26 Dec 2014 15:55:32 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 15:55:33 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 15:55:36 computer_web.py[line:77] INFO --- 你好//////erweima is send!
+Fri, 26 Dec 2014 15:57:09 computer_web.py[line:77] INFO --- cam is send!
+Fri, 26 Dec 2014 15:57:26 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 16:04:25 web.py[line:1811] INFO --- 200 GET / (127.0.0.1) 3.00ms
+Fri, 26 Dec 2014 16:04:25 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:04:25 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (127.0.0.1) 0.00ms
+Fri, 26 Dec 2014 16:04:25 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:04:25 web.py[line:1811] WARNING --- 404 GET /favicon.ico (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:04:34 web.py[line:1811] WARNING --- 404 GET /erweima/ok (127.0.0.1) 0.00ms
+Fri, 26 Dec 2014 16:05:23 web.py[line:1811] INFO --- 200 GET /erweima/ok (127.0.0.1) 0.00ms
+Fri, 26 Dec 2014 16:33:31 computer_web.py[line:64] INFO --- Socket open!
+Fri, 26 Dec 2014 16:33:37 web.py[line:1811] INFO --- 304 GET / (127.0.0.1) 3.00ms
+Fri, 26 Dec 2014 16:33:37 computer_web.py[line:82] INFO --- Socket close!
+Fri, 26 Dec 2014 16:33:37 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:33:37 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (127.0.0.1) 0.00ms
+Fri, 26 Dec 2014 16:33:37 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:33:48 web.py[line:1407] ERROR --- Uncaught exception GET /erweima/ok (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/erweima/ok', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch', 'If-None-Match': '"d9e172ae2327193b044d7b882bcadfba380ee232"', 'Host': '127.0.0.1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'})
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\web.py", line 1332, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "E:\Program\python\web\computer_web.py", line 86, in get
+    f = open('123.db','r')
+IOError: [Errno 2] No such file or directory: '123.db'
+Fri, 26 Dec 2014 16:33:48 web.py[line:1811] ERROR --- 500 GET /erweima/ok (127.0.0.1) 3.00ms
+Fri, 26 Dec 2014 16:34:37 web.py[line:1407] ERROR --- Uncaught exception GET /erweima/ok (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/erweima/ok', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'})
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\web.py", line 1332, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "E:\Program\python\web\computer_web.py", line 88, in get
+    self.uuid,self.data = i.split('/*'* 5)
+ValueError: need more than 1 value to unpack
+Fri, 26 Dec 2014 16:34:37 web.py[line:1811] ERROR --- 500 GET /erweima/ok (127.0.0.1) 3.00ms
+Fri, 26 Dec 2014 16:34:38 web.py[line:1407] ERROR --- Uncaught exception GET /erweima/ok (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/erweima/ok', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'})
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\web.py", line 1332, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "E:\Program\python\web\computer_web.py", line 88, in get
+    self.uuid,self.data = i.split('/*'* 5)
+ValueError: need more than 1 value to unpack
+Fri, 26 Dec 2014 16:34:38 web.py[line:1811] ERROR --- 500 GET /erweima/ok (127.0.0.1) 2.00ms
+Fri, 26 Dec 2014 16:35:04 web.py[line:1407] ERROR --- Uncaught exception GET /erweima/ok (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/erweima/ok', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'})
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\web.py", line 1332, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "E:\Program\python\web\computer_web.py", line 88, in get
+    self.uuid,self.data = i.split('/*'* 5)
+ValueError: need more than 1 value to unpack
+Fri, 26 Dec 2014 16:35:04 web.py[line:1811] ERROR --- 500 GET /erweima/ok (127.0.0.1) 4.00ms
+Fri, 26 Dec 2014 16:35:39 web.py[line:1407] ERROR --- Uncaught exception GET /erweima/ok (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/erweima/ok', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh;q=0.6', 'Accept-Encoding': 'gzip, deflate, sdch', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'})
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\web.py", line 1332, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "E:\Program\python\web\computer_web.py", line 88, in get
+    self.uuid,self.data = i.split('/*'* 5)
+ValueError: need more than 1 value to unpack
+Fri, 26 Dec 2014 16:35:39 web.py[line:1811] ERROR --- 500 GET /erweima/ok (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:36:55 web.py[line:1811] INFO --- 200 GET /erweima/ok (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:37:08 web.py[line:1811] INFO --- 304 GET / (127.0.0.1) 12.00ms
+Fri, 26 Dec 2014 16:37:08 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:37:08 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:37:08 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (127.0.0.1) 0.00ms
+Fri, 26 Dec 2014 16:37:41 computer_web.py[line:64] INFO --- Socket open!
+Fri, 26 Dec 2014 16:37:49 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 76, in on_message
+    self.erweima(self.get_data[0])
+  File "E:\Program\python\web\computer_web.py", line 59, in erweima
+    self.write_message( json.dumps({'type':self.type, 'data':self.data}) )
+AttributeError: 'WebSocketHandler' object has no attribute 'data'
+Fri, 26 Dec 2014 16:37:49 computer_web.py[line:82] INFO --- Socket close!
+Fri, 26 Dec 2014 16:38:01 computer_web.py[line:64] INFO --- Socket open!
+Fri, 26 Dec 2014 16:38:07 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 76, in on_message
+    self.erweima(self.get_data[0])
+  File "E:\Program\python\web\computer_web.py", line 59, in erweima
+    self.write_message( json.dumps({'type':self.type, 'data':self.data}) )
+AttributeError: 'WebSocketHandler' object has no attribute 'data'
+Fri, 26 Dec 2014 16:38:07 computer_web.py[line:82] INFO --- Socket close!
+Fri, 26 Dec 2014 16:38:31 computer_web.py[line:64] INFO --- Socket open!
+Fri, 26 Dec 2014 16:38:35 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 76, in on_message
+    self.erweima(self.get_data[0])
+  File "E:\Program\python\web\computer_web.py", line 59, in erweima
+    self.write_message( json.dumps({'type':self.type, 'data':self.data}) )
+AttributeError: 'WebSocketHandler' object has no attribute 'data'
+Fri, 26 Dec 2014 16:38:35 computer_web.py[line:82] INFO --- Socket close!
+Fri, 26 Dec 2014 16:39:14 computer_web.py[line:64] INFO --- Socket open!
+Fri, 26 Dec 2014 16:39:19 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 76, in on_message
+    self.erweima(self.get_data[0])
+  File "E:\Program\python\web\computer_web.py", line 60, in erweima
+    print self.data + '/t' + dt
+AttributeError: 'WebSocketHandler' object has no attribute 'data'
+Fri, 26 Dec 2014 16:39:19 computer_web.py[line:82] INFO --- Socket close!
+Fri, 26 Dec 2014 16:39:43 web.py[line:1811] INFO --- 200 GET /erweima/aed8cb00-8cda-11e4-890a-24b6fd45d4c1 (127.0.0.1) 1.00ms
+Fri, 26 Dec 2014 16:41:13 web.py[line:1811] INFO --- 304 GET /erweima/aed8cb00-8cda-11e4-890a-24b6fd45d4c1 (127.0.0.1) 0.00ms
+Fri, 26 Dec 2014 16:41:22 web.py[line:1811] INFO --- 304 GET /erweima/aed8cb00-8cda-11e4-890a-24b6fd45d4c1 (127.0.0.1) 28.00ms
+Fri, 26 Dec 2014 16:42:00 web.py[line:1811] INFO --- 304 GET /erweima/aed8cb00-8cda-11e4-890a-24b6fd45d4c1 (127.0.0.1) 27.00ms
+Fri, 26 Dec 2014 16:44:00 web.py[line:1811] INFO --- 304 GET /erweima/aed8cb00-8cda-11e4-890a-24b6fd45d4c1 (127.0.0.1) 18.00ms
+Fri, 26 Dec 2014 16:45:07 web.py[line:1811] INFO --- 200 GET /erweima/aed8cb00-8cda-11e4-890a-24b6fd45d4c1 (127.0.0.1) 2.00ms
+Fri, 26 Dec 2014 16:46:22 computer_web.py[line:64] INFO --- Socket open!
+Fri, 26 Dec 2014 16:46:29 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 76, in on_message
+    self.erweima(self.get_data[0])
+  File "E:\Program\python\web\computer_web.py", line 57, in erweima
+    f.write(self.uuid + '/*'* 5 + dt + '\n')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 46-47: ordinal not in range(128)
+Fri, 26 Dec 2014 16:46:29 computer_web.py[line:82] INFO --- Socket close!
+Fri, 26 Dec 2014 16:46:57 computer_web.py[line:64] INFO --- Socket open!
+Fri, 26 Dec 2014 16:47:01 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 76, in on_message
+    self.erweima(self.get_data[0])
+  File "E:\Program\python\web\computer_web.py", line 57, in erweima
+    f.write(self.uuid + '/*'* 5 + dt + '\n')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 46-47: ordinal not in range(128)
+Fri, 26 Dec 2014 16:47:01 computer_web.py[line:82] INFO --- Socket close!
+Fri, 26 Dec 2014 16:49:16 computer_web.py[line:64] INFO --- Socket open!
+Fri, 26 Dec 2014 16:49:20 websocket.py[line:372] ERROR --- Uncaught exception in /socket
+Traceback (most recent call last):
+  File "D:\Python27\lib\site-packages\tornado\websocket.py", line 369, in _run_callback
+    callback(*args, **kwargs)
+  File "E:\Program\python\web\computer_web.py", line 76, in on_message
+    self.erweima(self.get_data[0])
+  File "E:\Program\python\web\computer_web.py", line 60, in erweima
+    print self.data + '/t' + dt
+AttributeError: 'WebSocketHandler' object has no attribute 'data'
+Fri, 26 Dec 2014 16:49:20 computer_web.py[line:82] INFO --- Socket close!
+Fri, 26 Dec 2014 16:50:39 web.py[line:1811] INFO --- 200 GET /erweima/15640e0f-8cdc-11e4-90a5-24b6fd45d4c1 (192.168.1.100) 4.00ms
+Fri, 26 Dec 2014 16:50:39 web.py[line:1811] WARNING --- 404 GET /favicon.ico (192.168.1.100) 1.00ms
+Fri, 26 Dec 2014 17:12:45 web.py[line:1811] INFO --- 200 GET / (192.168.1.104) 3.00ms
+Fri, 26 Dec 2014 17:12:45 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:12:45 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:12:45 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:12:46 web.py[line:1811] WARNING --- 404 GET /favicon.ico (192.168.1.104) 1.00ms
+Fri, 26 Dec 2014 17:13:16 web.py[line:1811] INFO --- 304 GET / (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:13:16 web.py[line:1811] WARNING --- 404 GET /js/justgage.1.0.1.min.js (192.168.1.104) 1.00ms
+Fri, 26 Dec 2014 17:13:16 web.py[line:1811] WARNING --- 404 GET /js/raphael.2.1.0.min.js (192.168.1.104) 1.00ms
+Fri, 26 Dec 2014 17:13:16 web.py[line:1811] WARNING --- 404 GET /js/websocket.js (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:13:47 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 17:13:52 computer_web.py[line:77] INFO --- 你好//////erweima is send!
+Fri, 26 Dec 2014 17:13:52 web.py[line:1811] WARNING --- 404 GET /82c6f4b0-8cdf-11e4-bcdf-24b6fd45d4c1 (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:16:39 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 17:16:43 computer_web.py[line:77] INFO --- 你好啊//////erweima is send!
+Fri, 26 Dec 2014 17:16:43 web.py[line:1811] WARNING --- 404 GET /e8b92180-8cdf-11e4-b7e1-24b6fd45d4c1 (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:17:04 web.py[line:1811] WARNING --- 404 GET /e8b92180-8cdf-11e4-b7e1-24b6fd45d4c1 (192.168.1.104) 1.00ms
+Fri, 26 Dec 2014 17:17:55 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 17:18:01 computer_web.py[line:77] INFO --- 你好啊//////erweima is send!
+Fri, 26 Dec 2014 17:18:01 web.py[line:1811] INFO --- 200 GET /erweima/16e61d5e-8ce0-11e4-a64a-24b6fd45d4c1 (192.168.1.104) 1.00ms
+Fri, 26 Dec 2014 17:19:04 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 17:19:04 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 17:19:08 computer_web.py[line:77] INFO --- 你好啊//////erweima is send!
+Fri, 26 Dec 2014 17:19:08 web.py[line:1811] INFO --- 200 GET /erweima/3f23c7f0-8ce0-11e4-bb28-24b6fd45d4c1 (192.168.1.104) 1.00ms
+Fri, 26 Dec 2014 17:19:18 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 17:19:24 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 17:19:35 computer_web.py[line:77] INFO --- 你好//////erweima is send!
+Fri, 26 Dec 2014 17:19:35 web.py[line:1811] INFO --- 200 GET /erweima/4ecedbde-8ce0-11e4-8c89-24b6fd45d4c1 (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:20:41 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 17:20:41 computer_web.py[line:63] INFO --- Socket open!
+Fri, 26 Dec 2014 17:20:45 computer_web.py[line:77] INFO --- 你好//////erweima is send!
+Fri, 26 Dec 2014 17:21:10 web.py[line:1811] INFO --- 200 GET /erweima/78a9949e-8ce0-11e4-8025-24b6fd45d4c1 (192.168.1.104) 0.00ms
+Fri, 26 Dec 2014 17:21:14 computer_web.py[line:81] INFO --- Socket close!
+Fri, 26 Dec 2014 18:00:54 computer_web.py[line:62] INFO --- Socket open!
+Fri, 26 Dec 2014 18:01:16 computer_web.py[line:77] INFO --- 你好
+我是蔺宪武//////erweima is send!
+Fri, 26 Dec 2014 18:01:30 web.py[line:1811] INFO --- 200 GET /erweima/21325170-8ce6-11e4-9867-24b6fd45d4c1 (192.168.1.104) 1006.00ms

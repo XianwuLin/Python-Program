@@ -1,0 +1,149 @@
+html, body {
+    background-color: #F8F8F8;
+	font-size:16px;
+	font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #2C3E50;
+	font-weight:400;
+	line-height:1.75;
+	background-color:#ffffff;
+	}
+a{
+	color:#006699;
+	text-decoration:none;
+	font-size:16px;
+	}
+a:hover{
+	color:#333333;
+	text-decoration:none;
+	}
+.web_title{
+	text-align:center;
+	margin:10px auto 10px;
+	position:relative;
+	}
+.web_title a{
+	font-size:30px;
+	font:'Underdog', cursive;
+	}
+	
+.navigation {
+	margin:0 auto;
+	top:auto;
+	}
+.navigation a{
+	color:#dd0000;
+	margin-left:40px;
+	}
+.navigation a:hover{
+	color:#333333;
+	}
+.postsList {
+	font-size: 16px;
+    margin: 0px 0px 10px 0px;
+	}
+.postsList li{
+  list-style: none;
+  height: 35px;
+  padding: 5px 0px;
+  border-bottom: 1px solid #F9F9F9;
+	}
+.postsList li span{
+	float: right;
+	}
+.discuss, .main_box{
+	margin:15px auto;
+	text-align:left;
+	position:relative;
+	margin-bottom:15px;
+	width: 700px;
+	padding: 0px;
+	}
+#date{
+
+	text-align:right;
+	font-size: 14px;
+	color:#999999;
+}
+.up_control{
+	border:thin;
+	background-color:#99CC99;
+	margin:0 auto;
+	text-align:left;
+	position:relative;
+	width: 700px;
+	padding: 0px;
+	}
+.change{
+	margin:0 auto;
+	text-align:left;
+	position:relative;
+	width: 700px;
+	padding: 0px;
+	}
+#p_blog{
+	position:relative;
+	display:inline;
+	float:left;
+	margin-top:15px;
+	}
+#n_blog{
+	position:relative;
+	display:inline;
+	float:right;
+	margin-top:15px;
+	}
+.footnotes{
+	position:relative;
+	width:700px;
+	font-size:12px;
+	color:#999999;
+	margin:50px auto 10px;
+	}
+.footnotes a{
+	font-size:14px;
+	}
+.time{
+	color:#000000;
+	background-color:#3a87ad;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	padding:1px 3px 2px;
+	}
+.tag_title, .year{
+	text-align:center;
+	background-color:#F6F9FC;
+	font-size:20px;
+	height:2em;
+	line-height: 2em;
+	overflow: hidden;
+	}
+.tag_title a{
+	font-size:20px;
+	color:#333333;
+	}
+#tag a{
+	color:#666666;
+	}
+#tag a:hover{
+	color:#AAAAAA;
+	}
+.tag-cloud{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.tag-cloud a{
+	color:#003333;
+	}
+.tag-cloud a:hover{
+	color:#AAAAAA;
+	}
+#gotop{
+    display:none;
+    width:55px;
+    height:55px;
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    background:url(/static/images/backtop.png) no-repeat -70px 0px;
+	}

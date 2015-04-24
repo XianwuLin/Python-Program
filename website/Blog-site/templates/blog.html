@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="Xianwu Lin"/>
+<title>{{Blog_title}}</title>
+<link rel='shortcut icon' type='image/ico' href='/favicon.ico'>
+<link href='http://fonts.googleapis.com/css?family=Underdog' rel='stylesheet' type='text/css'>
+<link href='{{static_url('css/style.css')}}' rel='stylesheet' type='text/css'>
+<link href='{{static_url('css/prettify.css')}}' rel='stylesheet' type='text/css'>
+<link href='{{static_url('css/github2.css')}}' rel='stylesheet' type='text/css'>
+</head>
+
+<body onload="prettyPrint();">
+<p class="web_title"><a href="/" title="home">Xianwu Lin</a></p>
+<hr width="80%">
+<div align="center" class="navigation">
+<a href="/" title="home">HOME</a>
+<a href="/categories" title="categories">CATEGORIES</a>
+<a href="/about" title="about">ABOUT</a>
+</div>
+
+<div class="main_box text">
+	{{ Blog_content }}
+	<p id="date"> {{ Blog_time }}</p>
+	<hr>
+</div>
+<div class="change">
+<div id="tag">{{ tag }}</div>
+<div id="p_blog">{{ p_blog }}</div>
+<div id="n_blog">{{ n_blog }}</div>
+<div id="gotop"></div>
+</div>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?move=0&amp;btn=r2.gif&amp;uid=1840983" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+<div class="discuss">
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1840983"></script>
+<!-- UY END -->
+</div>
+
+<div align="center" class="footnotes">Copyright 2013 - 2013 by <a href="/">Xianwu Lin</a> | <span class="time">{{ Last_date }}</span></div>
+
+<script type="text/javascript" src='{{static_url('js/jquery-1.10.2.min.js')}}'></script>
+<script type="text/javascript" src='{{static_url('js/prettify.js')}}'></script>
+<script type="text/javascript">
+function goTop()
+{
+    $(window).scroll(function(e) {
+        //若滚动条离顶部大于100元素
+        if($(window).scrollTop()>100)
+            $("#gotop").fadeIn(1000);//以1秒的间隔渐显id=gotop的元素
+        else
+            $("#gotop").fadeOut(1000);//以1秒的间隔渐隐id=gotop的元素
+    });
+};
+$(function(){
+    //点击回到顶部的元素
+    $("#gotop").click(function(e) {
+            //以1秒的间隔返回顶部
+            $('body,html').animate({scrollTop:0},1000);
+    });
+    $("#gotop").mouseover(function(e) {
+        $(this).css("background","url(/static/images/backtop.png) no-repeat 0px 0px");
+    });
+    $("#gotop").mouseout(function(e) {
+        $(this).css("background","url(/static/images/backtop.png) no-repeat -70px 0px");
+    });
+    goTop();//实现回到顶部元素的渐显与渐隐
+});
+</script>
+</body>
+</html>

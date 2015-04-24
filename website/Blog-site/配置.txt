@@ -1,0 +1,123 @@
+#http
+sudo apt-get install python-pip
+sudo apt-get install python-dev
+sudo pip install tornado
+sudo pip install misaka
+sudo apt-get install supervisor
+sudo apt-get install nginx
+sudo su
+cd /var
+mkdir www
+sudo chmod 755 /var/www
+# 上传网站
+cd /etc/supervisor/
+cp supervisord.conf supervisord.conf.bak20130915
+vim supervisord.conf
+#追加
+
+[program:site-8001]
+command=python /var/www/server.py --port=8001
+directory=/var/www/
+autorestart=true
+redirect_stderr=true
+stdout_logfile=/var/www/server-8001.log
+
+[program:site-8002]
+command=python /var/www/server.py --port=8002
+directory=/var/www/
+autorestart=true
+redirect_stderr=true
+stdout_logfile=/var/www/server-8002.log
+
+supervisord
+supervisorctl            
+cd /etc/nginx
+cp nginx.conf nginx.conf.bak20130915
+vim nginx.conf
+全部替换为：
+
+user www-data;
+worker_processes 2;
+
+error_log /var/log/nginx/error.log;
+pid /var/run/nginx.pid;
+
+events {
+        worker_connections 768;
+        use epoll;
+}
+
+
+http {
+    # Enumerate all the Tornado servers here
+    upstream frontends {
+        server 127.0.0.1:8001;
+        server 127.0.0.1:8002;
+    }
+
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
+
+    access_log /var/log/nginx/access.log;
+
+    keepalive_timeout 65;
+    proxy_read_timeout 200;
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    gzip on;
+    gzip_min_length 1000;
+    gzip_proxied any;
+    gzip_types text/plain text/html text/css text/xml
+               application/x-javascript application/xml
+               application/atom+xml text/javascript;
+
+    # Only retry if there was a communication error, not a timeout
+    # on the Tornado server (to avoid propagating "queries of death"
+    # to all frontends)
+    proxy_next_upstream error;
+
+    server {
+        listen 80;
+        # Allow file uploads
+        client_max_body_size 50M;
+
+        location ^~ /static/ {
+            root /var/www/;
+            if ($query_string) {
+                expires max;
+            }
+        }
+        location = /favicon.ico {
+            rewrite (.*) /static/favicon.ico;
+        }
+        location = /robots.txt {
+            rewrite (.*) /static/robots.txt;
+        }
+
+        location / {
+            proxy_pass_header Server;
+            proxy_set_header Host $http_host;
+            proxy_redirect false;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Scheme $scheme;
+            proxy_pass http://frontends;
+        }
+    }
+}
+
+#重启
+
+
+#R与RStudio安装
+
+sudo vim /etc/apt/sources.list
+deb http://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu precise/
+sudo apt-get update
+
+sudo apt-get install r-base
+
+sudo apt-get install gdebi-core
+sudo apt-get install libapparmor1  # Required only for Ubuntu, not Debian
+wget http://download2.rstudio.org/rstudio-server-0.97.551-amd64.deb
+sudo gdebi rstudio-server-0.97.551-amd64.deb

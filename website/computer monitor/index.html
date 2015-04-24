@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/justgage.1.0.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/raphael.2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#button1 {
+				height: 40px;
+				width: 100%;
+				font-size: 30px;
+				font-family: arial;
+			}
+			#smallImage {
+				display: block;
+				margin: auto;
+				border: dashed;
+			}
+		</style>
+		<title>Webcam</title>
+	</head>
+
+	<body>
+		<input type="button" id="button1" value="摄像头"  onclick="cam() " />
+		<img width:640px;height:480px; " id="smallImage" src="" />
+		<input type="button" id="button2" value="Cpu占有率" " onclick="cpu_percent() " />
+		<div id="cpuimage" style="width:400px; height:320px"></div>
+		<textarea rows="" cols="" id = "erweimatext"></textarea>
+		<input type="button" id="erweimabutton" value="二维码" onclick="erweima() "/>
+		<img src="" id = "erweimaimage"/>
+		<input type="button" id="button3" value="关闭连接" " onclick="closewebsocket() " />
+		<script src="js/websocket.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+	
+</html>
