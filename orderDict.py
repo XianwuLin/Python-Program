@@ -2,7 +2,7 @@ from collections import OrderedDict
 import json
 
 class OrderDict(OrderedDict):
-    def __init__(*args, **kwds):
+    def __init__(self, *args, **kwds):
         OrderedDict.__init__(*args, **kwds)
 
     def dumps(self):
