@@ -17,24 +17,24 @@ def memoize(function=None, unique_name="unique", timeout=0):
         return functools.partial(memoize, unique_name=unique_name, timeout=timeout)
     memo = {}
     @functools.wraps(function)
-    def wrapper(*args):
+    def wrapper(*args, **kwargs):
+        wargs = str(args) + str(kwargs)
         if unique_name not in memo:
             memo[unique_name] = dict()
-        if args in memo[unique_name]:
+        if wargs in memo[unique_name]:
             if timeout == 0:  #timeout=0 永不过期
-                print 1
-                return memo[unique_name][args]["result"]
+                return memo[unique_name][wargs]["result"]
             else:
-                if time.time() - memo[unique_name][args]["timeout"] < timeout: #未过期
-                    return memo[unique_name][args]["result"]
+                if time.time() - memo[unique_name][wargs]["timeout"] < timeout: #未过期
+                    return memo[unique_name][wargs]["result"]
                 else:  #消极过期
-                    rv = function(*args)
-                    memo[unique_name][args] = {"timeout":time.time(),  #缓存的时间戳
+                    rv = function(*args, **kwargs)
+                    memo[unique_name][wargs] = {"timeout":time.time(),  #缓存的时间戳
                                     "result": rv}   #缓存的结果
                     return rv
         else: #不在缓存中
-            rv = function(*args)
-            memo[unique_name][args] = {"timeout":time.time(),  #缓存的时间戳
+            rv = function(*args, **kwargs)
+            memo[unique_name][wargs] = {"timeout":time.time(),  #缓存的时间戳
                                "result": rv}   #缓存的结果
             return rv
     return wrapper
@@ -47,5 +47,5 @@ def fibonacci(n):
 
 
 old = time.time()
-print fibonacci(30)
+print fibonacci(n=30)
 print time.time() - old
