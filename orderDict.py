@@ -3,7 +3,7 @@ import json
 
 class OrderDict(OrderedDict):
     def __init__(self, *args, **kwds):
-        OrderedDict.__init__(*args, **kwds)
+        OrderedDict.__init__(self, *args, **kwds)
 
     def dumps(self):
         return '{"data":%s, "index":%s}' % (json.dumps(self), json.dumps(self.keys()))
@@ -22,3 +22,8 @@ class OrderDict(OrderedDict):
         for item in str_json['index']:
             self[item] = str_json['data'].get(item)
         return self
+
+    
+b = OrderDict({"a": 1, "b": 2})
+b.dumps()
+print b
